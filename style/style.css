@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #232323; */
+}
+
+
+/* ///////////////////////////////////////// */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-jc-cen {
+    justify-content: center;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.flex-align-item-c{
+    align-items: center;
+}
+
+
+/* ///////////////////////////////////////// */
+
+/* ESTILOS HEADER */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(to right, #232323, #25253c);
+    /* top: 0;
+    left: 0; */
+    /* box-sizing: border-box;
+    z-index: 999; */
+}
+
+.header-nav{
+    padding: 0 50px 0 50px;
+}
+
+.nav-logo{
+    align-items: center;
+    text-align: center;
+}
+.nav-logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+.nav-links li{
+    list-style: none;
+    padding: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: font-size 0.3s; /* Agrega una transición suave para la propiedad font-size */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+.line-botton::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Tamaño del subrayado */
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* Color del subrayado */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Duración de la animación y tipo de easing */
+}
+
+.nav-links li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.shop-cart {
+    height: 20px;
+    width: 20px;
+    margin-top: -5px;
+}
+
+.count-shop {
+    background-color: #5f3583;
+    display: inline-block;
+    border-radius: 100%;
+    width: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* ESTILOS SECTION MAIN */
+
+.pagina-main{
+    background: url(../img/new-first-old.webp), linear-gradient(to right, #232323, #25253c);
+    width: 100%;
+    height: 720px;
+    display: flex;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+
+.pagina-main main{
+    padding: 0 50px 0 50px;
+}
+
+
+.container-main button{
+    font-size: 20px;
+    padding: 14px 50px 14px 50px;
+    background-color: #5f3583;
+    border-radius: 30px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 0px 40px -4px rgba(150,35,224,1);
+    -moz-box-shadow: 0px 0px 40px -4px rgba(150,35,224,1);
+    box-shadow: 0px 0px 40px -4px rgba(150,35,224,1);
+}
+
+.container-main p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container-main h1{
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+}
+.container-main h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.container-main button:hover{
+    font-size: 20px;
+    padding: 14px 50px 14px 50px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    color: black;
+    transition: 0.4s;
+}
+
+
+.container-image figure img{
+    background-color: #232323;
+    width: 100%;
+    /* height: auto; */
+}
+
+
+/* ESTILOS SECCION SOBRE NOSOTROS */
+
+.about-container{
+    padding: 0 50px 0 50px;
+}
+
+.text-about{
+    margin-left: 300px;
+    color: white;
+    padding: 20px;
+}
+
+.text-about h3{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.text-about p{
+    color: #242431;
+    font-size: 20px;
+    background-color: none;
+}
+
+.about-title {
+    text-align: center;
+}
+.about-title h3{
+    background-color: none;
+    color: #232323;
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+.img-container{
+    width: 50%;
+}
+
+.about-title button{
+    font-size: 20px;
+    padding: 14px 50px 14px 50px;
+    background-color: #5f3583;
+    border-radius: 30px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 0px 40px -4px rgba(150,35,224,1);
+    -moz-box-shadow: 0px 0px 40px -4px rgba(150,35,224,1);
+    box-shadow: 0px 0px 40px -4px rgba(150,35,224,1);
+    margin-bottom: 60px;
+}
+
+
+.about-title button:hover{
+    font-size: 20px;
+    padding: 14px 50px 14px 50px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    color: black;
+    -webkit-box-shadow: 0px 0px 50px -4px rgba(150, 35, 224, 1);
+    -moz-box-shadow: 0px 0px 50px -4px rgba(150, 35, 224, 1);
+    box-shadow: 0px 0px 50px -4px rgba(150, 35, 224, 1);
+}
+
+
+/* SECCION CARDS */
+
+.cards-main{
+    width:100%;
+    height:auto;
+    background: url(../img/line-background.webp), linear-gradient(to right, #232323, #25253c);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.cards-container{
+    padding: 40px;
+}
+
+.card {
+    text-align: center;
+    width:100%;
+    height:auto;
+}
+
+.card figure {
+    margin-bottom: 20px;
+}
+
+.card figure img{
+    height: 300px;
+    transition: transform 0.4s ease;
+}
+
+.card figure img:hover{
+    transform: scale(1.100);
+}
+
+.card h3, h4{
+    color: white;
+    font-weight: 300;
+}
+
+.card button{
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 14px 30px 14px 30px;
+    background-color: #5f3583;
+    border-radius: 2px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: 500;
+
+    margin-bottom: 60px;
+}
+
+.card button:hover{
+    padding: 14px 30px 14px 30px;
+    background-color: white;
+    border-radius: 2px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.nav-button{
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    height: auto;
+    width: auto;
+}
+
+
+/* SECCION SUBSCRIPCION */
+
+
+.container-subs{
+    height: 100%;
+    padding: 0 50px 0 50px;
+    background-image: linear-gradient(to bottom, #dee4ec, #d7def0, #d4d7f4, #d6cff4, #ddc5f2);
+}
+
+.box-subs{
+    margin: 100px 50px 100px 50px;
+}
+
+.text-subs {
+    margin-left: 50px;
+}
+
+.text-subs h3{
+    font-size: 50px;
+}
+
+.form-subs {
+    margin-top: 20px;
+    width: 502px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.form-subs form{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 40px -4px rgba(150,35,224,0.4);
+    -moz-box-shadow: 0px 0px 40px -4px rgba(150,35,224,0.4);
+    box-shadow: 0px 0px 40px -4px rgba(150,35,224,0.6);
+    width: 100%;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.form-subs form input{
+    width: 400px;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+}
+.form-subs form button{
+    width: 90px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #5f3583;
+    color: white;
+    transition: 0.3s;
+}
+.form-subs form button:hover{
+    width: 90px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/* SECCION FOOTER */
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background: url(../img//background/c837a6_831fe7c79e9e45869554588550034ac1~mv2.webp), linear-gradient(to right, #232323, #25253c);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.contenedor-page-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.logo-footer{
+    color: rgb(201, 199, 199);
+    width: 220px;
+}
+.logo-footer p{
+    font-size: 12px;
+}
+.explora-container{
+    width: 220px;
+}
+
+.explora-container h3{
+    color: rgb(201, 199, 199);
+}
+
+.follow-container h3 {
+    color: rgb(201, 199, 199); 
+}
+
+.list-footer{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-footer {
+    text-decoration: none;
+    color: rgb(201, 199, 199);
+}
+
+.footer-info p {
+    color: rgb(201, 199, 199);
+    font-size: 12px;
+}
+
+.links-footer:hover {
+    text-decoration: underline;
+}

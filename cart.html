@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="./app/productos.js"></script>
+    <script src="./app/cartService.js" defer></script>
+    <script src="./app/cart.js" defer></script>
+    <title>Tracker Digital</title>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav flex-row flex-jc-sb">
+            <div class="nav-logo flex-row">
+                <a href="index.html#inicio">TrackerDigital</a>
+            </div>
+            <ul class="nav-links flex-row ">
+                <li>
+                    <a class="line-botton" href="index.html#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a class="line-botton" href="index.html#shop">Shop</a>
+                </li>
+                <li>
+                    <a class="line-botton" href="index.html#about">Nosotros</a>
+                </li>
+                <li>
+                    <a class="shop-menu-info" href="cart.html"><img class="shop-cart" src="img/icons/shopping-cart.svg" alt=""><span class="count-shop" id="count-carrito">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="titulo-carrito-pagina">TU CARRITO</h2>
+        <p class="mensaje-carrito-vacio">Una vez que añadas algo a tu carrito, aparecerá acá. <a href="index.html#shop">¿Listo para empezar?</a> </p>
+        <div class="containers">
+            <div class="products-container"></div>
+            <div class="products-info-container">
+                <h3>RESUMEN DEL PEDIDO</h3>
+                <p class="total-unidades">Total de unidades: </p>
+                <p class="total-precio" id="total-precio">Valor total: </p>
+                <button id="comprarBtn">COMPRAR</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-main">
+        <div class="contenedor-page-footer">
+            <div class="logo-footer">
+                <h3>Tracker</h3>
+                <h3>Digital</h3>
+                <p>Nuestra pasión es impulsar un estilo de vida saludable y activo.</p>
+            </div>
+            <div class="explora-container">
+                <h3>Explora</h3>
+                <ul class="list-footer">
+                    <li><a class="links-footer" href="#inicio">Inicio</a></li>
+                    <li><a class="links-footer" href="#shop">Shop</a></li>
+                    <li><a class="links-footer" href="#about">Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="follow-container">
+                <h3>Seguinos</h3>
+                <ul class="list-footer">
+                    <li><a href="" class="links-footer">Instagram</a></li>
+                    <li><a href="" class="links-footer">Facebook</a></li>
+                    <li><a href="" class="links-footer">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>2023. TrackerDigital - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+

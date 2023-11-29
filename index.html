@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="./app/productos.js"></script>
+	<script src="./app/cartService.js" defer></script>
+	<script src="./app/index.js" defer></script>
+    <title>Tracker Digital</title>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav flex-row flex-jc-sb">
+            <div class="nav-logo flex-row">
+                <a href="">TrackerDigital</a>
+            </div>
+            <ul class="nav-links flex-row ">
+                <li>
+                    <a class="line-botton" href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a class="line-botton" href="#shop">Shop</a>
+                </li>
+                <li>
+                    <a class="line-botton" href="#about">Nosotros</a>
+                </li>
+                <li>
+                    <a class="shop-menu-info" href="cart.html"><img class="shop-cart" src="img/icons/shopping-cart.svg" alt=""><span class="count-shop" id="count-carrito">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="pagina-main" id="inicio">
+        <main class="flex-row flex-align-item-c">
+            <div class="container-main">
+                <p>Crea tu rutina diaria</p>
+                <h1>TRACKER DIGI 4</h1>
+                <h3>Un monitor de la salud que te motiva en todo momento</h3>
+                <a href="#shop"><button href="#shop">COMPRAR</button></a>
+            </div>
+            <div class="container-image ">
+                <figure>
+                    <!-- <img src="img/shutterstock_1523165789.webp" alt=""> -->
+                </figure>
+            </div>
+        </main>
+    </section>
+    <section class="about-main" id="about">
+        <div class="about-container flex-column">
+            <div class="about-info flex-row flex-align-item-c">
+                <div class="img-container">
+                    <figure>
+                        <img src="img/shutterstock_1523165789.webp" alt="">
+                    </figure>
+                </div>
+                <div class="text-about">
+                    <p>Como líderes en el campo de los relojes inteligentes para la salud, nos enorgullece ofrecer una amplia gama de estos y que van más allá de la medición del tiempo. </p>
+                </div>
+            </div>
+            <div class="about-title">
+                <h3>Adopta un ritmo de vida saludable.</h3>
+                <a href="#shop"><button href="#shop">COMPRAR</button></a>
+            </div>
+        </div>
+    </section>
+    <section class="cards-main" id="shop">
+        <div class="cards-container flex-row flex-jc-cen">
+        </div>
+    </section>
+    <section class="pagina-subs" id="sub">
+        <div class="container-subs flex-row">
+            <div class="box-subs flex-row flex-jc-cen" >
+                <div class="img-subs flex-column flex-jc-cen">
+                    <figure>
+                        <img src="./img/Untitled-2fdsf.webp" alt="">
+                    </figure>
+                </div>
+                <div class="text-subs flex-column flex-jc-cen">
+                    <h3>Suscríbete y obtén 15% menos en la primer compra</h3>
+                    <div class="form-subs flex-row">
+                        <form>
+                            <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                            <button type="submit">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-main">
+        <div class="contenedor-page-footer">
+            <div class="logo-footer">
+                <h3>Tracker</h3>
+                <h3>Digital</h3>
+                <p>Nuestra pasión es impulsar un estilo de vida saludable y activo.</p>
+            </div>
+            <div class="explora-container">
+                <h3>Explora</h3>
+                <ul class="list-footer">
+                    <li><a class="links-footer" href="#inicio">Inicio</a></li>
+                    <li><a class="links-footer" href="#shop">Shop</a></li>
+                    <li><a class="links-footer" href="#about">Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="follow-container">
+                <h3>Seguinos</h3>
+                <ul class="list-footer">
+                    <li><a href="" class="links-footer">Instagram</a></li>
+                    <li><a href="" class="links-footer">Facebook</a></li>
+                    <li><a href="" class="links-footer">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>2023. TrackerDigital - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
